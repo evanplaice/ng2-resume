@@ -1,0 +1,20 @@
+{
+  "name": "ng2-resume",
+  "version": "0.0.1",
+  "description": "<ng2-resume> - Angular2 Resume Web Component",
+  "main": "resume.js",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanplaice/ng2-resume.git"
+  },
+  "author": "Evan Plaice",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evanplaice/ng2-resume/issues"
+  },
+  "homepage": "https://github.com/evanplaice/ng2-resume#readme",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
