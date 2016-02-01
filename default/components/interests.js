@@ -15,6 +15,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
       <h3>
         <em>{{ interest.name }}</em>
       </h3>
+      <p *ngIf="interest.summary">{{ interest.summary }}</p>
       <keywords [keywords]="interest.keywords"></keywords>
     </div>
   </section>
