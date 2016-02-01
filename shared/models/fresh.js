@@ -104,7 +104,9 @@ export class FreshModel {
     }
 
     if (obj.social) {
-      this.social = new SocialModel(obj.social);
+      obj.social.forEach((profile) => {
+        this.social.push(new SocialModel(profile));
+      });
     }
 
     if (obj.recognition) {
