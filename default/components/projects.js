@@ -9,7 +9,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
   <hr>
   <section id="projects">
     <header title="Projects"><span class="fa fa-lg fa-star"></span></header>
-    <div *ngFor="#project of projects">
+    <div *ngFor="let project of projects">
       <h3 *ngIf="project.role"><em>{{ project.role }}</em>,
         <template [ngIf]="project.url"><a href="{{ project.url }}">{{ project.title }}</a></template>
         <template [ngIf]="!project.url">{{ project.title }}</template>

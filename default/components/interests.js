@@ -9,7 +9,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
   <hr>
   <section id="interests">
     <header title="Interests"><span class="fa fa-lg fa-bicycle"></span></header>
-    <div *ngFor="#interest of interests">
+    <div *ngFor="let interest of interests">
       <h3>
         <em>{{ interest.name }}</em>
       </h3>

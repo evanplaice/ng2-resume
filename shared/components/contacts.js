@@ -5,7 +5,7 @@ import { Component, View } from 'angular2/core';
   inputs: [ 'contacts' ],
   template: `
   <template [ngIf]="contacts">
-    <ul *ngFor="#contact of contacts">
+    <ul *ngFor="let contact of contacts">
       <li>{{ contact.category }} - {{ contact.value }}</li>
     </ul>
   </template>

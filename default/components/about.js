@@ -14,7 +14,7 @@ import { DerpPipe } from '../../shared/pipes/derp';
     </div>
   </header>
   <div id="social" style="float:right;">
-    <div *ngFor="#profile of social | derp">{{ profile.network }}: <a href="{{ profile.url }}">{{ profile.user }}</a></div>
+    <div *ngFor="let profile of social | derp">{{ profile.network }}: <a href="{{ profile.url }}">{{ profile.user }}</a></div>
   </div>
   <div style="clear:both;"></div>
   `,

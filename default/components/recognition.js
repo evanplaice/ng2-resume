@@ -9,7 +9,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
   <hr>
   <section id="recognition">
     <header title="Recognition"><span class="fa fa-lg fa-trophy"></span></header>
-    <div *ngFor="#award of recognition">
+    <div *ngFor="let award of recognition">
       <h3>
         <template [ngIf]="!award.from">
           <em>{{ award.title }}</em>

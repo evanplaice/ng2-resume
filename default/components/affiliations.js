@@ -9,7 +9,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
   <hr>
   <section id="affiliations">
     <header title="Affiliations"><span class="fa fa-lg fa-share-alt"></span></header>
-    <div *ngFor="#association of affiliations.history">
+    <div *ngFor="let association of affiliations.history">
       <h3>
         <template [ngIf]="!association.url"><em>{{ association.role }}</em>, {{ association.organization }}</template>
         <template [ngIf]="association.url"><em>{{ association.role }}</em>, <a href="{{ association.url}}">{{ association.organization }}</a></template>

@@ -11,7 +11,7 @@ import 'font-awesome/css/font-awesome.min.css!css';
   <hr>
   <section id="education">
     <header title="Education"><span class="fa fa-lg fa-mortar-board"></span></header>
-    <div *ngFor="#school of education.history">
+    <div *ngFor="let school of education.history">
       <h3>
         <template [ngIf]="school.title"><em>{{ school.title }}</em>, </template>{{ school.institution }}
       </h3>

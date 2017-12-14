@@ -5,7 +5,7 @@ import { Component, View } from 'angular2/core';
   inputs: [ 'highlights' ],
   template: `
   <ul *ngIf="highlights">
-    <li *ngFor="#highlight of highlights">{{ highlight }}</li>
+    <li *ngFor="let highlight of highlights">{{ highlight }}</li>
   </ul>
   `
 })

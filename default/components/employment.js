@@ -9,7 +9,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
   <hr>
   <section id="employment">
     <header title="Employment"><span class="fa fa-lg fa-building"></span></header>
-    <div *ngFor="#job of employment.history">
+    <div *ngFor="let job of employment.history">
       <div>
         <h3><em>{{ job.position }}</em>,
           <template [ngIf]="job.url"><a href="{{ job.url }}">{{ job.employer }}</a></template>

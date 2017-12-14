@@ -17,7 +17,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="#set of skills.sets">
+        <tr *ngFor="let set of skills.sets">
           <td style="width: 25%;">{{ set.name }}</td>
           <td><keywords [keywords]="set.skills"></keywords></td>
         </tr>

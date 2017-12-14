@@ -9,7 +9,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
   <hr>
   <section id="references">
     <header title="References"><span class="fa fa-lg fa-thumbs-o-up"></span></header>
-    <div *ngFor="#reference of references">
+    <div *ngFor="let reference of references">
       <h3>
         <template [ngIf]="!reference.role"><em>{{ reference.name }}</em></template>
         <template [ngIf]="reference.role"><em>{{ reference.name }}</em>, {{ reference.role }}</template>
