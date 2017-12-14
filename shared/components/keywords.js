@@ -5,7 +5,7 @@ import { Component, View } from 'angular2/core';
   inputs: [ 'keywords' ],
   template: `
   <template [ngIf]="keywords">
-  <span class="keywords"><template ngFor #keyword="$implicit" [ngForOf]="keywords">{{ keyword }} </template></span>
+  <span class="keywords" *ngFor="let keyword of keywords">{{ keyword }} </span>
   </template>
   `
 })
