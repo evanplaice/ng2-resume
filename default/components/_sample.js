@@ -3,9 +3,7 @@ import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
 
 @Component({
   selector: '_sample',
-  inputs: [ '_sample' ]
-})
-@View({
+  inputs: [ '_sample' ],
   template: ``,
   directives: [ TEMPLATE_DIRECTIVES ],
   pipes: [ TEMPLATE_PIPES ]

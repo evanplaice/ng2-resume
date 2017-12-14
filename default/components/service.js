@@ -3,9 +3,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 
 @Component({
   selector: 'service',
-  inputs: [ 'service' ]
-})
-@View({
+  inputs: [ 'service' ],
   template: `
   <template [ngIf]="!empty()">
   <hr>

@@ -6,9 +6,7 @@ import style from './basis.css!text';
 
 @Component({
   selector: 'resume',
-  inputs: [ 'resume' ]
-})
-@View({
+  inputs: [ 'resume' ],
   template: template,
   style: [ style ],
   directives: [ BASIS_DIRECTIVES ],

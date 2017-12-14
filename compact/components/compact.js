@@ -7,9 +7,7 @@ import style from './compact.css!text';
 
 @Component({
   selector: 'resume',
-  inputs: [ 'resume' ]
-})
-@View({
+  inputs: [ 'resume' ],
   template: template,
   styles: [ style, fontAwesome ],
   directives: [ COMPACT_DIRECTIVES ],

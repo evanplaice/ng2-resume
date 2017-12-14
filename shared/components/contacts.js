@@ -2,9 +2,7 @@ import { Component, View } from 'angular2/core';
 
 @Component({
   selector: 'contacts',
-  inputs: [ 'contacts' ]
-})
-@View({
+  inputs: [ 'contacts' ],
   template: `
   <template [ngIf]="contacts">
     <ul *ngFor="#contact of contacts">

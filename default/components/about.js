@@ -3,9 +3,7 @@ import { DerpPipe } from '../../shared/pipes/derp';
 
 @Component({
   selector: 'about',
-  inputs: [ 'name', 'contact', 'social' ]
-})
-@View({
+  inputs: [ 'name', 'contact', 'social' ],
   template: `
   <header style="float:left">
     <h1 *ngIf="name">{{ name }}</h1>

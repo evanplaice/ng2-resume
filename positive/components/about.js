@@ -3,9 +3,7 @@ import { TEMPLATE_PIPES } from '../../shared/shared';
 
 @Component({
   selector: 'about',
-  inputs: [ 'name', 'info', 'contact' ]
-})
-@View({
+  inputs: [ 'name', 'info', 'contact' ],
   template: `
   <header>
   <h1 *ngIf="name">{{ name | nolast }} <span style="color: #C00000;">{{ name | last }}</span></h1>

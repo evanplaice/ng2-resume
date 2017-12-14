@@ -7,9 +7,7 @@ import style from './modern.css!text';
 
 @Component({
   selector: 'resume',
-  inputs: [ 'resume' ]
-})
-@View({
+  inputs: [ 'resume' ],
   template: template,
   styles: [ style, fontAwesome ],
   directives: [ MODERN_DIRECTIVES ],

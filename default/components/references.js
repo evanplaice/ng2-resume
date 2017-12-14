@@ -3,9 +3,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 
 @Component({
   selector: 'references',
-  inputs: [ 'references' ]
-})
-@View({
+  inputs: [ 'references' ],
   template: `
   <template [ngIf]="!empty() && !references.private">
   <hr>

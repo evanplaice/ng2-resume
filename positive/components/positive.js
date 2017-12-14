@@ -8,9 +8,7 @@ import style from './positive.css!text';
 
 @Component({
   selector: 'resume',
-  inputs: [ 'resume' ]
-})
-@View({
+  inputs: [ 'resume' ],
   template: template,
   styles: [ style, fontAwesome ],
   directives: [ POSITIVE_DIRECTIVES ],

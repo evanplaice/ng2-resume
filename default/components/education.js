@@ -5,9 +5,7 @@ import 'font-awesome/css/font-awesome.min.css!css';
 
 @Component({
   selector: 'education',
-  inputs: [ 'education' ]
-})
-@View({
+  inputs: [ 'education' ],
   template: `
   <template [ngIf]="!empty()">
   <hr>
