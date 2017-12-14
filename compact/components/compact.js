@@ -1,4 +1,4 @@
-import { Component, View, ViewEncapsulation } from 'angular2/core';
+import { Component, ViewEncapsulation } from 'angular2/core';
 import { COMPACT_DIRECTIVES } from '../compact';
 
 import template from './compact.html!text';

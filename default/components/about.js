@@ -1,4 +1,4 @@
-import { Component, View } from 'angular2/core';
+import { Component } from 'angular2/core';
 import { DerpPipe } from '../../shared/pipes/derp';
 
 @Component({

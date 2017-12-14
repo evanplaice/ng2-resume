@@ -1,4 +1,4 @@
-import { Component, View, ViewEncapsulation } from 'angular2/core';
+import { Component, ViewEncapsulation } from 'angular2/core';
 import { BASIS_DIRECTIVES } from '../basis';
 
 import template from './basis.html!text';

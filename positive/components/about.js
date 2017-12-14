@@ -1,4 +1,4 @@
-import { Component, View } from 'angular2/core';
+import { Component } from 'angular2/core';
 import { TEMPLATE_PIPES } from '../../shared/shared';
 
 @Component({
