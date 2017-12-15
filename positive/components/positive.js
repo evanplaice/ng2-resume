@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from 'angular2/core';
+import { Component, ViewEncapsulation } from 'angular-core';
 import { POSITIVE_DIRECTIVES } from '../positive';
 import { TEMPLATE_PIPES } from '../../shared/shared';
 
