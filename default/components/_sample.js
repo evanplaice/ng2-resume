@@ -1,4 +1,4 @@
-import { Component } from 'angular-core';
+import { Component } from '@angular/core';
 import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from '../../shared/shared';
 
 @Component({

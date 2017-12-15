@@ -1,4 +1,4 @@
-import { Component } from 'angular-core';
+import { Component } from '@angular/core';
 import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 
 import 'font-awesome/css/font-awesome.min.css!css';
