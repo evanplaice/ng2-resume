@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 
 @Component({
   selector: 'skills',
@@ -26,8 +25,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
     </ul>
   </section>
   </template>
-  `,
-  directives: [ TEMPLATE_DIRECTIVES ]
+  `
 })
 export class SkillsComponent {
   empty () {
