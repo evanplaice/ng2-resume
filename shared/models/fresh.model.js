@@ -1,26 +1,28 @@
-import { InfoModel } from './info.model';
-import { MetaModel } from './meta.model';
-import { DispositionModel } from './disposition.model';
-import { ContactModel } from './contact.model';
-import { LocationModel } from './location.model';
-import { EmploymentModel } from './employment.model';
-import { ProjectModel } from './project.model';
-import { SkillsModel } from './skills.model';
-import { ServiceModel } from './service.model';
-import { EducationModel } from './education.model';
-import { SocialModel } from './social.model';
-import { RecognitionModel } from './recognition.model';
-import { WritingModel } from './writing.model';
-import { ReadingModel } from './reading.model';
-import { SpeakingModel } from './speaking.model';
-import { GovernanceModel } from './governance.model';
-import { LanguageModel } from './language.model';
-import { SampleModel } from './sample.model';
-import { ReferenceModel } from './reference.model';
-import { TestimonialModel } from './testimonial.model';
-import { InterestModel } from './interest.model';
-import { ExtracurricularModel } from './extracurricular.model';
-import { AffiliationModel } from './affiliation.model';
+import {
+  InfoModel,
+  MetaModel,
+  DispositionModel,
+  ContactModel,
+  LocationModel,
+  EmploymentModel,
+  ProjectModel,
+  SkillsModel,
+  ServiceModel,
+  EducationModel,
+  SocialModel,
+  RecognitionModel,
+  WritingModel,
+  ReadingModel,
+  SpeakingModel,
+  GovernanceModel,
+  LanguageModel,
+  SampleModel,
+  ReferenceModel,
+  TestimonialModel,
+  InterestModel,
+  ExtracurricularModel,
+  AffiliationModel
+} from 'ng2-resume/shared/shared.facade'
 
 export class FreshModel {
   name = '';
