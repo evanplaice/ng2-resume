@@ -1,8 +1,7 @@
 {
   "name": "ng2-resume",
-  "version": "0.0.1",
   "description": "<ng2-resume> - Angular2 Resume Web Component",
-  "main": "resume.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/evanplaice/ng2-resume.git"
