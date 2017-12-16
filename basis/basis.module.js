@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { BasisComponent } from 'ng2-resume/basis/basis';
-import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'ng2-resume/shared/shared';
+import { SHARED_DECLARATIONS } from 'ng2-resume/shared/shared.facade';
 import { BASIS_DECLARATIONS } from 'ng2-resume/basis/basis.facade';
 
 import { ResumeService } from 'ng2-resume/shared/services/resume';
@@ -13,8 +13,7 @@ import { ResumeService } from 'ng2-resume/shared/services/resume';
   ],
   declarations: [
     BasisComponent,
-    TEMPLATE_DIRECTIVES,
-    TEMPLATE_PIPES,
+    SHARED_DECLARATIONS,
     BASIS_DECLARATIONS
   ],
   exports: [
