@@ -1,44 +1,20 @@
-// default directives
-import { AboutComponent } from 'ng2-resume/components/about';
-import { InfoComponent } from 'ng2-resume/components/info';
-import { EmploymentComponent } from 'ng2-resume/components/employment';
-import { ProjectsComponent } from 'ng2-resume/components/projects';
-import { SkillsComponent } from 'ng2-resume/components/skills';
-import { ServiceComponent } from 'ng2-resume/components/service';
-import { EducationComponent } from 'ng2-resume/components/education';
-import { SocialComponent } from 'ng2-resume/components/social';
-import { RecognitionComponent } from 'ng2-resume/components/recognition';
-import { WritingComponent } from 'ng2-resume/components/writing';
-import { ReadingComponent } from 'ng2-resume/components/reading';
-import { SpeakingComponent } from 'ng2-resume/components/speaking';
-import { GovernanceComponent } from 'ng2-resume/components/governance';
-import { LanguagesComponent } from 'ng2-resume/components/languages';
-import { SamplesComponent } from 'ng2-resume/components/samples';
-import { ReferencesComponent } from 'ng2-resume/components/references';
-import { TestimonialsComponent } from 'ng2-resume/components/testimonials';
-import { InterestsComponent } from 'ng2-resume/components/interests';
-import { ExtracurricularComponent } from 'ng2-resume/components/extracurricular';
-import { AffiliationsComponent } from 'ng2-resume/components/affiliations';
-
-export const DEFAULT_DIRECTIVES = [
-  AboutComponent,
-  InfoComponent,
-  EmploymentComponent,
-  ProjectsComponent,
-  SkillsComponent,
-  ServiceComponent,
-  EducationComponent,
-  SocialComponent,
-  RecognitionComponent,
-  WritingComponent,
-  ReadingComponent,
-  SpeakingComponent,
-  GovernanceComponent,
-  LanguagesComponent,
-  SamplesComponent,
-  ReferencesComponent,
-  TestimonialsComponent,
-  InterestsComponent,
-  ExtracurricularComponent,
-  AffiliationsComponent
-];
+export { AboutComponent } from 'ng2-resume/default/components/about';
+export { InfoComponent } from 'ng2-resume/default/components/info';
+export { EmploymentComponent } from 'ng2-resume/default/components/employment';
+export { ProjectsComponent } from 'ng2-resume/default/components/projects';
+export { SkillsComponent } from 'ng2-resume/default/components/skills';
+export { ServiceComponent } from 'ng2-resume/default/components/service';
+export { EducationComponent } from 'ng2-resume/default/components/education';
+export { SocialComponent } from 'ng2-resume/default/components/social';
+export { RecognitionComponent } from 'ng2-resume/default/components/recognition';
+export { WritingComponent } from 'ng2-resume/default/components/writing';
+export { ReadingComponent } from 'ng2-resume/default/components/reading';
+export { SpeakingComponent } from 'ng2-resume/default/components/speaking';
+export { GovernanceComponent } from 'ng2-resume/default/components/governance';
+export { LanguagesComponent } from 'ng2-resume/default/components/languages';
+export { SamplesComponent } from 'ng2-resume/default/components/samples';
+export { ReferencesComponent } from 'ng2-resume/default/components/references';
+export { TestimonialsComponent } from 'ng2-resume/default/components/testimonials';
+export { InterestsComponent } from 'ng2-resume/default/components/interests';
+export { ExtracurricularComponent } from 'ng2-resume/default/components/extracurricular';
+export { AffiliationsComponent } from 'ng2-resume/default/components/affiliations';
