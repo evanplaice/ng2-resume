@@ -1,13 +1,8 @@
 // -------------- FRESH themes --------------
-import { BasisComponent } from './basis/components/basis';
-import { CompactComponent } from './compact/components/compact';
-import { ModernComponent } from './modern/components/modern';
-import { PositiveComponent } from './positive/components/positive';
-
-export const BASIS_COMPONENT = BasisComponent;
-export const COMPACT_COMPONENT = CompactComponent;
-export const MODERN_COMPONENT = ModernComponent;
-export const POSITIVE_COMPONENT = PositiveComponent;
+export { ResumeModule as BasisModule } from 'ng2-resume/basis/basis.module';
+export { ResumeModule as CompactModule } from 'ng2-resume/compact/compact.module';
+export { ResumeModule as ModernModule } from 'ng2-resume/modern/modern.module';
+export { ResumeModule as PositiveModule } from 'ng2-resume/positive/positive.module';
 
 // -------------- FRESH models --------------
 import { TEMPLATE_MODELS } from './shared/shared';
