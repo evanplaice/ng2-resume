@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
-
-import 'font-awesome/css/font-awesome.min.css!css';
 
 @Component({
   selector: 'education',
@@ -23,8 +20,7 @@ import 'font-awesome/css/font-awesome.min.css!css';
     </div>
   </section>
   </template>
-  `,
-  directives: [ TEMPLATE_DIRECTIVES ]
+  `
 })
 export class EducationComponent {
   empty () {

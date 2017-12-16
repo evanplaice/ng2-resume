@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { DerpPipe } from '../../shared/pipes/derp';
 
 @Component({
   selector: 'about',
@@ -17,7 +16,6 @@ import { DerpPipe } from '../../shared/pipes/derp';
     <div *ngFor="let profile of social | derp">{{ profile.network }}: <a href="{{ profile.url }}">{{ profile.user }}</a></div>
   </div>
   <div style="clear:both;"></div>
-  `,
-  pipes: [ DerpPipe ]
+  `
 })
 export class AboutComponent {}

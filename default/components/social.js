@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 
 @Component({
   selector: 'social',
@@ -12,8 +11,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
     // TODO: implement this
   </section>
   </template>
-  `,
-  directives: [ TEMPLATE_DIRECTIVES ]
+  `
 })
 export class SocialComponent {
   empty () {

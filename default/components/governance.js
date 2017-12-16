@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 
 @Component({
   selector: 'governance',
@@ -21,8 +20,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
     <!-- <keywords [keywords]="position.keywords"></keywords> -->
   </section>
   </template>
-  `,
-  directives: [ TEMPLATE_DIRECTIVES ]
+  `
 })
 export class GovernanceComponent {
   empty () {

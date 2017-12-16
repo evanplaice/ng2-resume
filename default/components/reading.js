@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
 
 @Component({
   selector: 'reading',
@@ -19,8 +18,7 @@ import { TEMPLATE_DIRECTIVES } from '../../shared/shared';
     </div>
   </section>
   </template>
-  `,
-  directives: [ TEMPLATE_DIRECTIVES ]
+  `
 })
 export class ReadingComponent {
   empty () {
