@@ -4,14 +4,14 @@ import { Component } from '@angular/core';
   selector: 'samples',
   inputs: [ 'samples' ],
   template: `
-  <template [ngIf]="!empty()">
+  <ng-template [ngIf]="!empty()">
   <hr>
   <section id="samples">
     <header title="Samples"><span class="fa fa-lg fa-share"></span></header>
     <div *ngFor="let sample of samples">
       <h3 *ngIf="sample.title">
-        <template [ngIf]="!sample.url">{{ role.title }}</template>
-        <template [ngIf]="sample.url"><a href="{{ sample.url }}">{{ sample.title }}</a></template>
+        <ng-template [ngIf]="!sample.url">{{ role.title }}</ng-template>
+        <ng-template [ngIf]="sample.url"><a href="{{ sample.url }}">{{ sample.title }}</a></ng-template>
       </h3>
       <duration [start]="sample.date"></duration>
       <summary>{{ sample.summary }}</summary>
@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
       <keywords [keywords]="sample.keywords"></keywords>
     </div>
   </section>
-  </template>
+  </ng-template>
   `
 })
 export class SamplesComponent {

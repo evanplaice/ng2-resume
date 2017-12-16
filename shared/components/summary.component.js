@@ -4,9 +4,9 @@ import { Component } from '@angular/core';
   selector: 'summary',
   inputs: [ 'summary' ],
   template: `
-  <template [ngIf]="summary">
+  <ng-template [ngIf]="summary">
   <p>{{ summary }}}</p>
-  </template>
+  </ng-template>
   `
 })
 export class SummaryComponent {}

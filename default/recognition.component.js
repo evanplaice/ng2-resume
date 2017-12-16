@@ -4,26 +4,26 @@ import { Component } from '@angular/core';
   selector: 'recognition',
   inputs: [ 'recognition' ],
   template: `
-  <template [ngIf]="!empty()">
+  <ng-template [ngIf]="!empty()">
   <hr>
   <section id="recognition">
     <header title="Recognition"><span class="fa fa-lg fa-trophy"></span></header>
     <div *ngFor="let award of recognition">
       <h3>
-        <template [ngIf]="!award.from">
+        <ng-template [ngIf]="!award.from">
           <em>{{ award.title }}</em>
-        </template>
-        <template [ngIf]="award.from">
+        </ng-template>
+        <ng-template [ngIf]="award.from">
           <em>{{ award.title }}, </em>
-          <template [ngIf]="!award.url">{{ award.from }}</template>
-          <template [ngIf]="award.url"> <a href="{{ award.url }}">{{ award.from }}</a></template>
-        </template>
+          <ng-template [ngIf]="!award.url">{{ award.from }}</ng-template>
+          <ng-template [ngIf]="award.url"> <a href="{{ award.url }}">{{ award.from }}</a></ng-template>
+        </ng-template>
       </h3>
       <duration [start]="award.date"></duration>
       <summary>{{ award.summary }}</summary>
     </div>
   </section>
-  </template>
+  </ng-template>
   `
 })
 export class RecognitionComponent {

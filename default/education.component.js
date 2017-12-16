@@ -4,13 +4,13 @@ import { Component } from '@angular/core';
   selector: 'education',
   inputs: [ 'education' ],
   template: `
-  <template [ngIf]="!empty()">
+  <ng-template [ngIf]="!empty()">
   <hr>
   <section id="education">
     <header title="Education"><span class="fa fa-lg fa-mortar-board"></span></header>
     <div *ngFor="let school of education.history">
       <h3>
-        <template [ngIf]="school.title"><em>{{ school.title }}</em>, </template>{{ school.institution }}
+        <ng-template [ngIf]="school.title"><em>{{ school.title }}</em>, </ng-template>{{ school.institution }}
       </h3>
       <duration [start]="school.start" [end]="school.end"></duration>
       <summary>{{ school.summary }}</summary>
@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
       <keywords [keywords]="school.keywords"></keywords>
     </div>
   </section>
-  </template>
+  </ng-template>
   `
 })
 export class EducationComponent {

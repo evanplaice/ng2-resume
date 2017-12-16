@@ -4,13 +4,13 @@ import { Component } from '@angular/core';
   selector: 'languages',
   inputs: [ 'languages' ],
   template: `
-  <template [ngIf]="!empty()">
+  <ng-template [ngIf]="!empty()">
   <hr>
   <section id="languages">
     <header title="Languages"></header>
     // TODO: implement this
   </section>
-  </template>
+  </ng-template>
   `
 })
 export class LanguagesComponent {

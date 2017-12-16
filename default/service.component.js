@@ -4,14 +4,14 @@ import { Component } from '@angular/core';
   selector: 'service',
   inputs: [ 'service' ],
   template: `
-  <template [ngIf]="!empty()">
+  <ng-template [ngIf]="!empty()">
   <hr>
   <section id="service">
     <header title="Service"><span class="fa fa-lg fa-child"></span></header>
     <div *ngFor="let role of service.history">
       <h3 *ngIf="role.organization"><em>{{ role.position }}</em>,
-        <template [ngIf]="role.organization && !role.url">{{ role.organization }}</template>
-        <template [ngIf]="role.organization && role.url"><a href="{{ role.url }}">{{ role.organization }}</a></template>
+        <ng-template [ngIf]="role.organization && !role.url">{{ role.organization }}</ng-template>
+        <ng-template [ngIf]="role.organization && role.url"><a href="{{ role.url }}">{{ role.organization }}</a></ng-template>
       </h3>
       <duration [start]="role.start" [end]="role.end"></duration>
       <summary>{{ role.summary }}</summary>
@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
       <keywords [keywords]="role.keywords"></keywords>
     </div>
   </section>
-  </template>
+  </ng-template>
   `
 })
 export class ServiceComponent {

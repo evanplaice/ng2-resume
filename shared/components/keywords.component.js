@@ -4,9 +4,9 @@ import { Component } from '@angular/core';
   selector: 'keywords',
   inputs: [ 'keywords' ],
   template: `
-  <template [ngIf]="keywords">
+  <ng-template [ngIf]="keywords">
   <span class="keywords" *ngFor="let keyword of keywords">{{ keyword }} </span>
-  </template>
+  </ng-template>
   `
 })
 export class KeywordsComponent {}

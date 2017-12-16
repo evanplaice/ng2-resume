@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'testimonials',
   inputs: [ 'testimonials' ],
   template: `
-  <template [ngIf]="!empty()">
+  <ng-template [ngIf]="!empty()">
   <hr>
   <section id="testimonials">
     <header title="Testimonials"><span class="fa fa-lg fa-thumbs-o-up"></span></header>
@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
       <summary>{{ testimonial.quote }}</summary>
     </div>
   </section>
-  </template>
+  </ng-template>
   `
 })
 export class TestimonialsComponent {

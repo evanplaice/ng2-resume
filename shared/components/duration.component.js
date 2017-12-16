@@ -4,10 +4,10 @@ import { Component } from '@angular/core';
   selector: 'duration',
   inputs: [ 'start', 'end' ],
   template: `
-  <template [ngIf]="start">
+  <ng-template [ngIf]="start">
   <span *ngIf="start && !end" class="tenure">{{ start }}</span>
   <span *ngIf="start && end" class="tenure">{{ start }} - {{ end }}</span>
-  </template>
+  </ng-template>
   `
 })
 export class DurationComponent {}

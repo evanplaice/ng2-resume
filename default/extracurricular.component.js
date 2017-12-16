@@ -4,13 +4,13 @@ import { Component } from '@angular/core';
   selector: 'extracurricular',
   inputs: [ 'extracurricular' ],
   template: `
-  <template [ngIf]="!empty()">
+  <ng-template [ngIf]="!empty()">
   <hr>
   <section id="extracurricular">
     <header title="Extracurricular"></header>
     // TODO: implement this
   </section>
-  </template>
+  </ng-template>
   `
 })
 export class ExtracurricularComponent {

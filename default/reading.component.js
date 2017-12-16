@@ -4,20 +4,20 @@ import { Component } from '@angular/core';
   selector: 'reading',
   inputs: [ 'reading' ],
   template: `
-  <template [ngIf]="!empty()">
+  <ng-template [ngIf]="!empty()">
   <hr>
   <section id="reading">
     <header title="Reading"><span class="fa fa-lg fa-book"></span></header>
     <div *ngFor="let piece of reading">
       <h3>
-        <template [ngIf]="!piece.url"><em>{{ piece.title }}</em><template [ngIf]="piece.author">, {{ piece.author }}</template></template>
-        <template [ngIf]="piece.url"><a href="{{ piece.url }}"><em>{{ piece.title }}</em></a><template [ngIf]="piece.author">, {{ piece.author }}</template></template>
+        <ng-template [ngIf]="!piece.url"><em>{{ piece.title }}</em><ng-template [ngIf]="piece.author">, {{ piece.author }}</ng-template></ng-template>
+        <ng-template [ngIf]="piece.url"><a href="{{ piece.url }}"><em>{{ piece.title }}</em></a><ng-template [ngIf]="piece.author">, {{ piece.author }}</ng-template></ng-template>
       </h3>
       <duration [start]="piece.date"></duration>
       <summary>{{ piece.summary }}</summary>
     </div>
   </section>
-  </template>
+  </ng-template>
   `
 })
 export class ReadingComponent {

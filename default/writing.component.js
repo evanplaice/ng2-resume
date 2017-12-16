@@ -4,20 +4,20 @@ import { Component } from '@angular/core';
   selector: 'writing',
   inputs: [ 'writing' ],
   template: `
-  <template [ngIf]="!empty()">
+  <ng-template [ngIf]="!empty()">
   <hr>
   <section id="writing">
     <header title="Writing"><span class="fa fa-lg fa-pencil"></span></header>
     <div *ngFor="let piece of writing">
       <h3>
-        <template [ngIf]="!piece.publisher.url"><em>{{ piece.title }}</em>, {{ piece.publisher.name }}</template>
-        <template [ngIf]="piece.publisher.url"><em>{{ piece.title }}</em>, <a href="{{ piece.publisher.url }}">{{ piece.publisher.name }}</a></template>
+        <ng-template [ngIf]="!piece.publisher.url"><em>{{ piece.title }}</em>, {{ piece.publisher.name }}</ng-template>
+        <ng-template [ngIf]="piece.publisher.url"><em>{{ piece.title }}</em>, <a href="{{ piece.publisher.url }}">{{ piece.publisher.name }}</a></ng-template>
       </h3>
       <duration [start]="piece.date"></duration>
       <summary>{{ piece.summary }}</summary>
     </div>
   </section>
-  </template>
+  </ng-template>
   `
 })
 export class WritingComponent {

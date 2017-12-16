@@ -4,13 +4,13 @@ import { Component } from '@angular/core';
   selector: 'speaking',
   inputs: [ 'speaking' ],
   template: `
-  <template [ngIf]="!empty()">
+  <ng-template [ngIf]="!empty()">
   <hr>
   <section id="speaking">
     <header title="Speaking"><span class="fa fa-lg fa-users"></span></header>
     <div *ngFor="let talk of speaking">
       <h3>
-        <template [ngIf]="talk.title"><em>{{ talk.title }}</em>, </template>
+        <ng-template [ngIf]="talk.title"><em>{{ talk.title }}</em>, </ng-template>
         {{ talk.event }}
       </h3>
       <duration [start]="talk.date"></duration>
@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
       <keywords [keywords]="talk.keywords"></keywords>
     </div>
   </section>
-  </template>
+  </ng-template>
   `
 })
 export class SpeakingComponent {

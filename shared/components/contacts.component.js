@@ -4,11 +4,11 @@ import { Component } from '@angular/core';
   selector: 'contacts',
   inputs: [ 'contacts' ],
   template: `
-  <template [ngIf]="contacts">
+  <ng-template [ngIf]="contacts">
     <ul *ngFor="let contact of contacts">
       <li>{{ contact.category }} - {{ contact.value }}</li>
     </ul>
-  </template>
+  </ng-template>
   `
 })
 export class ContactsComponent {}

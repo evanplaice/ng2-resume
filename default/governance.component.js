@@ -4,22 +4,22 @@ import { Component } from '@angular/core';
   selector: 'governance',
   inputs: [ 'governance' ],
   template: `
-  <template [ngIf]="!empty()">
+  <ng-template [ngIf]="!empty()">
   <hr>
   <section id="governance">
     <header title="Governance"></header>
     <div *ngFor="let position of governance">
       <h3>
-        <template [ngIf]="position.role">
-        <em>{{ position.role }}</em><template [ngIf]="position.organization">, {{ position.organization }}</template>
-        </template>
+        <ng-template [ngIf]="position.role">
+        <em>{{ position.role }}</em><ng-template [ngIf]="position.organization">, {{ position.organization }}</ng-template>
+        </ng-template>
       </h3>
     </div>
     <!-- <duration [start]="position.start" [end]="position.end"></duration> -->
     <!-- <highlights [highlights]="position.highlights"></highlights> -->
     <!-- <keywords [keywords]="position.keywords"></keywords> -->
   </section>
-  </template>
+  </ng-template>
   `
 })
 export class GovernanceComponent {

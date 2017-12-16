@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'interests',
   inputs: [ 'interests' ],
   template: `
-  <template [ngIf]="!empty()">
+  <ng-template [ngIf]="!empty()">
   <hr>
   <section id="interests">
     <header title="Interests"><span class="fa fa-lg fa-bicycle"></span></header>
@@ -16,7 +16,7 @@ import { Component } from '@angular/core';
       <keywords [keywords]="interest.keywords"></keywords>
     </div>
   </section>
-  </template>
+  </ng-template>
   `
 })
 export class InterestsComponent {

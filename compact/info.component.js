@@ -4,11 +4,11 @@ import { Component } from '@angular/core';
   selector: 'info',
   inputs: [ 'info' ],
   template: `
-  <template [ngIf]="!empty()">
+  <ng-template [ngIf]="!empty()">
   <section id="info">
     {{ info.brief }}
   </section>
-  </template>
+  </ng-template>
   `
 })
 export class InfoComponent {

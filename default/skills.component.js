@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'skills',
   inputs: [ 'skills' ],
   template: `
-  <template [ngIf]="!empty()">
+  <ng-template [ngIf]="!empty()">
   <hr>
   <section id="skills">
     <header title="Skills"><span class="fa fa-lg fa-code"></span></header>
@@ -23,7 +23,7 @@ import { Component } from '@angular/core';
       </tbody>
     </table>
   </section>
-  </template>
+  </ng-template>
   `
 })
 export class SkillsComponent {

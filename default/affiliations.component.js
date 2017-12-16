@@ -4,14 +4,14 @@ import { Component } from '@angular/core';
   selector: 'affiliations',
   inputs: [ 'affiliations' ],
   template: `
-  <template [ngIf]="!empty()">
+  <ng-template [ngIf]="!empty()">
   <hr>
   <section id="affiliations">
     <header title="Affiliations"><span class="fa fa-lg fa-share-alt"></span></header>
     <div *ngFor="let association of affiliations.history">
       <h3>
-        <template [ngIf]="!association.url"><em>{{ association.role }}</em>, {{ association.organization }}</template>
-        <template [ngIf]="association.url"><em>{{ association.role }}</em>, <a href="{{ association.url}}">{{ association.organization }}</a></template>
+        <ng-template [ngIf]="!association.url"><em>{{ association.role }}</em>, {{ association.organization }}</ng-template>
+        <ng-template [ngIf]="association.url"><em>{{ association.role }}</em>, <a href="{{ association.url}}">{{ association.organization }}</a></ng-template>
       </h3>
       <duration [start]="association.start" [end]="association.end"></duration>
       <summary>{{ association.summary }}</summary>
@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
       <keywords [keywords]="association.keywords"></keywords>
     </div>
   </section>
-  </template>
+  </ng-template>
   `
 })
 export class AffiliationsComponent {

@@ -4,13 +4,13 @@ import { Component } from '@angular/core';
   selector: 'social',
   inputs: [ 'social' ],
   template: `
-  <template [ngIf]="!empty()">
+  <ng-template [ngIf]="!empty()">
   <hr>
   <section id="social">
     <header title="Social"></header>
     // TODO: implement this
   </section>
-  </template>
+  </ng-template>
   `
 })
 export class SocialComponent {
