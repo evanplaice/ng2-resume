@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PositiveComponent } from 'ng2-resume/positive/positive';
-import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'ng2-resume/shared/shared';
+import { SHARED_DECLARATIONS } from 'ng2-resume/shared/shared.facade';
 import { POSITIVE_DECLARATIONS } from 'ng2-resume/positive/positive.facade';
 
 import { ResumeService } from 'ng2-resume/shared/services/resume';
@@ -13,8 +13,7 @@ import { ResumeService } from 'ng2-resume/shared/services/resume';
   ],
   declarations: [
     PositiveComponent,
-    TEMPLATE_DIRECTIVES,
-    TEMPLATE_PIPES,
+    SHARED_DECLARATIONS,
     POSITIVE_DECLARATIONS
   ],
   exports: [
