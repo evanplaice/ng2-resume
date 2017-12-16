@@ -20,7 +20,7 @@ import { InterestsComponent } from 'ng2-resume/default/components/interests';
 import { ExtracurricularComponent } from 'ng2-resume/default/components/extracurricular';
 import { AffiliationsComponent } from 'ng2-resume/default/components/affiliations';
 
-export const MODERN_DIRECTIVES = [
+const DIRECTIVES = [
   AboutComponent,
   InfoComponent,
   EmploymentComponent,
@@ -41,4 +41,7 @@ export const MODERN_DIRECTIVES = [
   InterestsComponent,
   ExtracurricularComponent,
   AffiliationsComponent
-];
+]
+
+export const MODERN_DIRECTIVES = DIRECTIVES;
+export const MODERN_DECLARATIONS = [ ...DIRECTIVES ];
