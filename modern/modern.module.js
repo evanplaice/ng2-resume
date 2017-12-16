@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ModernComponent } from 'ng2-resume/modern/modern';
+import { ModernComponent } from 'ng2-resume/modern/modern.component';
 import { SHARED_DECLARATIONS } from 'ng2-resume/shared/shared.facade';
 import { MODERN_DECLARATIONS } from 'ng2-resume/modern/modern.facade';
 

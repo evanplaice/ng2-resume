@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CompactComponent } from 'ng2-resume/compact/compact';
+import { CompactComponent } from 'ng2-resume/compact/compact.component';
 import { SHARED_DECLARATIONS } from 'ng2-resume/shared/shared.facade';
 import { COMPACT_DECLARATIONS } from 'ng2-resume/compact/compact.facade';
 

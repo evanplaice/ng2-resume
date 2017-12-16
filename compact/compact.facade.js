@@ -1,4 +1,4 @@
-import { InfoComponent } from 'ng2-resume/compact/info';
+import { InfoComponent } from 'ng2-resume/compact/info.component';
 import {
   AboutComponent,
   EmploymentComponent,

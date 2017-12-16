@@ -1,4 +1,4 @@
-import { AboutComponent } from 'ng2-resume/positive/about';
+import { AboutComponent } from 'ng2-resume/positive/about.component';
 import {
   InfoComponent,
   EmploymentComponent,

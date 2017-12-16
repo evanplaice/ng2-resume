@@ -1,4 +1,4 @@
-import { SkillsComponent } from 'ng2-resume/modern/skills';
+import { SkillsComponent } from 'ng2-resume/modern/skills.component';
 import {
   AboutComponent,
   InfoComponent,

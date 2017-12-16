@@ -1,8 +1,8 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
-import template from './modern.html!text';
+import template from './compact.component.html!text';
 import fontAwesome from 'font-awesome/css/font-awesome.min.css!text';
-import style from './modern.css!text';
+import style from './compact.component.css!text';
 
 @Component({
   selector: 'resume',
@@ -11,8 +11,6 @@ import style from './modern.css!text';
   styles: [ style, fontAwesome ],
   encapsulation: ViewEncapsulation.Native
 })
-export class ModernComponent {
-  constructor () {
-    // console.log('resume');
-  }
+export class CompactComponent {
+  constructor () { }
 }
