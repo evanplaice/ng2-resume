@@ -1,6 +1,4 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { POSITIVE_DIRECTIVES } from '../positive';
-import { TEMPLATE_PIPES } from '../../shared/shared';
 
 import template from './positive.html!text';
 import fontAwesome from 'font-awesome/css/font-awesome.min.css!text';
@@ -11,12 +9,8 @@ import style from './positive.css!text';
   inputs: [ 'resume' ],
   template: template,
   styles: [ style, fontAwesome ],
-  directives: [ POSITIVE_DIRECTIVES ],
-  pipes: [ TEMPLATE_PIPES ],
   encapsulation: ViewEncapsulation.Native
 })
 export class PositiveComponent {
-  constructor () {
-    // console.log('resume');
-  }
+  constructor () { }
 }

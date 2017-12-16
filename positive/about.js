@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { TEMPLATE_PIPES } from '../../shared/shared';
 
 @Component({
   selector: 'about',
@@ -14,7 +13,6 @@ import { TEMPLATE_PIPES } from '../../shared/shared';
     <span *ngIf="contact.website" class="website"><a href="{{ contact.website }}">{{ contact.website }}</a></span>
   </p>
   </header>
-  `,
-  pipes: [ TEMPLATE_PIPES ]
+  `
 })
 export class AboutComponent {}
