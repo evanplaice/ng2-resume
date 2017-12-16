@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ModernComponent } from 'ng2-resume/modern/modern';
-import { TEMPLATE_DIRECTIVES, TEMPLATE_PIPES } from 'ng2-resume/shared/shared';
+import { SHARED_DECLARATIONS } from 'ng2-resume/shared/shared.facade';
 import { MODERN_DECLARATIONS } from 'ng2-resume/modern/modern.facade';
 
 import { ResumeService } from 'ng2-resume/shared/services/resume';
@@ -13,8 +13,7 @@ import { ResumeService } from 'ng2-resume/shared/services/resume';
   ],
   declarations: [
     ModernComponent,
-    TEMPLATE_DIRECTIVES,
-    TEMPLATE_PIPES,
+    SHARED_DECLARATIONS,
     MODERN_DECLARATIONS
   ],
   exports: [
