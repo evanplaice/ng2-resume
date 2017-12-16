@@ -53,9 +53,9 @@ const PIPES = [
   LastPipe
 ];
 
-export const TEMPLATE_DIRECTIVES = DIRECTIVES;
-export const TEMPLATE_PIPES = PIPES;
+export const SHARED_DIRECTIVES = DIRECTIVES;
+export const SHARED_PIPES = PIPES;
 export const SHARED_DECLARATIONS = [
-  ...TEMPLATE_DIRECTIVES,
-  ...TEMPLATE_PIPES
+  ...SHARED_DIRECTIVES,
+  ...SHARED_PIPES
 ];
