@@ -1,6 +1,6 @@
 {
-  "name": "ng2-resume",
-  "description": "<ng2-resume> - Angular2 Resume Web Component",
+  "name": "ngx-freshresume",
+  "description": "<ngx-freshresume> - Angular2 FreshResume Web Component",
   "author": "Evan Plaice",
   "license": "MIT",
   "main": "index.js",
