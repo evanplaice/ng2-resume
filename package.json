@@ -1,7 +1,7 @@
 {
   "name": "ngx-freshresume",
   "description": "<ngx-freshresume> - Angular2 FreshResume Web Component",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "Evan Plaice",
   "license": "MIT",
   "main": "index.js",
