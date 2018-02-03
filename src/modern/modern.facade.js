@@ -1,9 +1,9 @@
+import { SkillsComponent } from './skills.component';
 import {
   AboutComponent,
   InfoComponent,
   EmploymentComponent,
   ProjectsComponent,
-  SkillsComponent,
   ServiceComponent,
   EducationComponent,
   SocialComponent,
@@ -19,7 +19,7 @@ import {
   InterestsComponent,
   ExtracurricularComponent,
   AffiliationsComponent
-} from 'ng2-resume/default/default.facade';
+} from '../default/default.facade';
 
 const DIRECTIVES = [
   AboutComponent,
@@ -42,7 +42,7 @@ const DIRECTIVES = [
   InterestsComponent,
   ExtracurricularComponent,
   AffiliationsComponent
-];
+]
 
-export const BASIS_DIRECTIVES = DIRECTIVES;
-export const BASIS_DECLARATIONS = [ ...DIRECTIVES ]
+export const MODERN_DIRECTIVES = DIRECTIVES;
+export const MODERN_DECLARATIONS = [ ...DIRECTIVES ];

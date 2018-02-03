@@ -22,7 +22,7 @@ import {
   InterestModel,
   ExtracurricularModel,
   AffiliationModel
-} from 'ng2-resume/shared/shared.facade'
+} from '../shared.facade'
 
 export class FreshModel {
   name = '';

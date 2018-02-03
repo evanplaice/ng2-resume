@@ -1,6 +1,7 @@
 {
   "name": "ngx-freshresume",
   "description": "<ngx-freshresume> - Angular2 FreshResume Web Component",
+  "version": "0.1.1",
   "author": "Evan Plaice",
   "license": "MIT",
   "main": "index.js",
@@ -13,18 +14,32 @@
   "bugs": {
     "url": "https://github.com/evanplaice/ng2-resume/issues"
   },
-  "scripts": {},
-  "dependencies": {},
-  "devDependencies": {},
-  "jspm": {
-    "dependencies": {
-      "rxjs": "npm:rxjs@5.0.1",
-      "text": "github:systemjs/plugin-text@^0.0.4"
-    },
-    "devDependencies": {
-      "traceur": "github:jmcriffey/bower-traceur@0.0.92",
-      "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.92"
-    }
+  "scripts": {
+    "build": "webpack && webpack --config webpack.min.js",
+    "preversion": "npm run build && git add -A dist",
+    "version": "git push",
+    "postversion": "git push --tags",
+    "postpublish": "rm -rf dist"
   },
-  "version": "0.1.1"
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-angular2": "0.0.2",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.9",
+    "file-loader": "^1.1.6",
+    "font-awesome": "^4.7.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.20.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-merge": "^4.1.1"
+  },
+  "peerDependencies": {
+    "@angular/common": "^5.0",
+    "@angular/http": "^4.0",
+    "rxjs": "^5.0"
+  }
 }

@@ -1,6 +1,6 @@
-import { AboutComponent } from 'ng2-resume/positive/about.component';
+import { InfoComponent } from './info.component';
 import {
-  InfoComponent,
+  AboutComponent,
   EmploymentComponent,
   ProjectsComponent,
   SkillsComponent,
@@ -19,7 +19,7 @@ import {
   InterestsComponent,
   ExtracurricularComponent,
   AffiliationsComponent
-} from 'ng2-resume/default/default.facade';
+} from '../default/default.facade';
 
 const DIRECTIVES = [
   AboutComponent,
@@ -44,5 +44,5 @@ const DIRECTIVES = [
   AffiliationsComponent
 ];
 
-export const POSITIVE_DIRECTIVES = [ DIRECTIVES ];
-export const POSITIVE_DECLARATIONS = [ ...DIRECTIVES ];
+export const COMPACT_DIRECTIVES = DIRECTIVES;
+export const COMPACT_DECLARATIONS = [ ...DIRECTIVES ];
