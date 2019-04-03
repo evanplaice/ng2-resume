@@ -3,7 +3,8 @@
 html, body, main, section, header, ul, p, h1, h2, h3 {
   font-family: {{{fontList 'default'}}};
   font-size: 12px;
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
   display: block;
 }
 
@@ -62,19 +63,25 @@ thead {
 
 main > header {
   width: 100%;
-  float: left;
   margin-bottom: 0;
   position: relative;
 }
 
+h1 {
+  float: left;
+}
 
 h3 {
   display: inline-block;
   line-height: 1;
 }
+
+#container header {
+  float: none !important;
+}
+
 #contact {
   float: right;
-  position: absolute;
   right: 0;
   bottom: 0;
 }
