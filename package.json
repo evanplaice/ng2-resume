@@ -5,15 +5,9 @@
   "author": "Evan Plaice",
   "license": "MIT",
   "main": "index.js",
-  "format": "es6",
   "homepage": "https://github.com/evanplaice/ng2-resume#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/evanplaice/ng2-resume.git"
-  },
-  "bugs": {
-    "url": "https://github.com/evanplaice/ng2-resume/issues"
-  },
+  "repository": "git+https://github.com/evanplaice/ng2-resume.git",
+  "bugs": "https://github.com/evanplaice/ng2-resume/issues",
   "scripts": {
     "build": "webpack && webpack --config webpack.min.js",
     "preversion": "npm run build && git add -A dist",
@@ -21,7 +15,6 @@
     "postversion": "git push --tags",
     "postpublish": "rm -rf dist"
   },
-  "dependencies": {},
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
