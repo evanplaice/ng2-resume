@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'development',
   entry: {
     'ngx-freshresume': './src/index.js',
     'freshresume-basis': './src/basis/basis.module',
@@ -17,7 +18,7 @@ module.exports = {
           {
             loader: 'babel-loader',
             options: {
-              presets: [ 'es2015', 'angular2' ]
+              presets: [ 'babel-preset-env', 'angular2' ]
             }
           }
         ],
@@ -37,10 +38,10 @@ module.exports = {
     ]
   },
   externals: {
-    "@angular/common": "@angular/common",
     "@angular/core": '@angular/core',
-    "@angular/http": '@angular/http',
-    "rxjs/Observable": 'rxjs/Observable'
+    "@angular/common": "@angular/common",
+    "@angular/common/http": "@angular/common/http",
+    "rxjs/operators": 'rxjs/operators',
   },
   output: {
     path: path.resolve(__dirname, "dist"),

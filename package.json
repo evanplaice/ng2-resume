@@ -9,7 +9,7 @@
   "repository": "git+https://github.com/evanplaice/ng2-resume.git",
   "bugs": "https://github.com/evanplaice/ng2-resume/issues",
   "scripts": {
-    "build": "webpack && webpack --config webpack.min.js",
+    "build": "webpack && webpack --config webpack.prod.js",
     "preversion": "npm run build && git add -A dist",
     "version": "git push",
     "postversion": "git push --tags",
