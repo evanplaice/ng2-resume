@@ -9,7 +9,7 @@ import style from 'raw-loader!./modern.component.css';
   inputs: [ 'src', 'data' ],
   template: template,
   styles: [ style, fontAwesome ],
-  encapsulation: ViewEncapsulation.Native
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class ModernComponent {
   constructor(@Inject(ResumeService) resumeService) {
