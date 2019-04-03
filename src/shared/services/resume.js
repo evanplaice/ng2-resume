@@ -1,13 +1,18 @@
 import { Injectable, Inject } from '@angular/core';
-import { Http } from '@angular/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { FreshModel } from '../models/fresh.model';
+import { map, startWith } from 'rxjs/operators';
+
+const httpOptions = {
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+};
 
 @Injectable()
 export class ResumeService {
   resume$;
   src;
 
-  constructor (@Inject(Http) http) {
+  constructor (@Inject(HttpClient) http) {
     // http bindings for a GET request
     this.http = http;
 
@@ -18,8 +23,10 @@ export class ResumeService {
   loadResume(path) {
     if (path || this.src) {
       return this.resume$ = this.http.get(path || this.src)
-      .map(res => new FreshModel(res.json()))
-      .startWith(new FreshModel());
+        .pipe(
+          map(res => new FreshModel(res)),
+          startWith(new FreshModel())
+        );
     }
   }
 }

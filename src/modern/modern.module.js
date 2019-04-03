@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http'; 
 
 import { ModernComponent } from './modern.component';
 import { SHARED_DECLARATIONS } from '../shared/shared.facade';
@@ -9,7 +10,8 @@ import { ResumeService } from '../shared/services/resume';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ],
   declarations: [
     ModernComponent,
