@@ -1,0 +1,1 @@
+<strong><p align="center">NOTICE: This package is officially deprecated</p></strong>
